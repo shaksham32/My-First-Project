@@ -2,7 +2,7 @@ import requests
 
 # Define the city and your OpenWeatherMap API key
 city_name = 'delhi'
-API_Key = 'a1e38680e8c7785a5333e7f233579e1f'  # Replace with your real API a1e38680e8c7785a5333e7f233579e1fkey
+API_Key = 'a1e38680e8c7785a5333e7f233579e1f'  
 
 # Construct the API request URL
 url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_Key}&units=metric'
@@ -80,3 +80,4 @@ except requests.exceptions.RequestException as err:
 
 except Exception as e:
     print(f"An error occurred: {e}")
+
